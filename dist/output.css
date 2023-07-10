@@ -937,6 +937,22 @@ html, body {
 }
 
 @media (min-width: 1024px) {
+  .lg\:h-10 {
+    height: 2.5rem;
+  }
+
+  .lg\:h-8 {
+    height: 2rem;
+  }
+
+  .lg\:w-10 {
+    width: 2.5rem;
+  }
+
+  .lg\:w-8 {
+    width: 2rem;
+  }
+
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
