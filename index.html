@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="dist/output.css" rel="stylesheet" />
+    <script type="text/javascript" src="src/main.js"></script>
+  </head>
+  <body class="relative bg-gray-50 h-[100dvh] overflow-hidden">
+    <header class="flex p-5">
+      <div id="logoText" class="flex-1 text-2xl lg:text-3xl">Sketch Master</div>
+      <div id="menu" class="text-2xl font-bold transition-opacity duration-300">
+        &#9776;
+      </div>
+      <div
+        id="menuContainer"
+        class="pointer-events-none grid absolute z-50 text-base transition-opacity duration-300 p-4 gap-4 rounded grid-cols-1 top-14 right-5 w-1/2 md:w-1/3 bg-white shadow-md"
+      >
+        <div class="grid grid-cols-3">
+          <label for="gridSlider">Grid Size:</label>
+          <input id="gridSlider" type="range" min="1" max="64" value="16" />
+          <input
+            id="gridValue"
+            class="w-8 text-center place-self-center"
+            type="number"
+            min="1"
+            max="64"
+            placeholder="16"
+          />
+        </div>
+        <div id="colorDiv" class="grid grid-cols-3">
+          <label for="gridColor">Color:</label>
+          <input id="gridColor" type="color" value="#000000" />
+          <input
+            id="textColor"
+            type="text"
+            placeholder="#000000"
+            maxlength="7"
+            class="text-center"
+          />
+        </div>
+        <div id="Mode" class="gap-2 grid grid-cols-2 lg:grid-cols-4">
+          <button
+            id="color"
+            class="border border-cyan-400 rounded text-white bg-cyan-400"
+          ></button>
+          <button id="rainbow" class="border border-black rounded"></button>
+          <button id="eraser" class="border border-black rounded"></button>
+          <button id="clear" class="border border-black rounded"></button>
+        </div>
+      </div>
+    </header>
+    <main class="pt-5 relative items-center flex-col flex h-4/5">
+      <div
+        id="gridContainer"
+        class="bg-white shadow-xl grid w-3/4 h-full"
+      ></div>
+    </main>
+    <footer
+      class="p-2 gap-4 flex justify-center items-center absolute bottom-0 w-full text-center"
+    >
+      <a href="https://github.com/markvayson" target="_blank">
+        <img src="src/img/github.svg" class="w-6 h-8 inline hover:animate-ping"
+      /></a>
+      <span class="text-base lg:text-2xl"> Copyright 2023 © mark vayson</span>
+    </footer>
+  </body>
+</html>
