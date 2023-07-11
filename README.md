@@ -4,27 +4,28 @@ This project is a sketch pad that allows you to create pixel art by hovering ove
 
 ## Instructions
 
-1. Open the [game] file in your web browser.
+1. Open the [game](https://markvayson.github.io/SketchMaster/).
 2. A 16x16 grid of square divs will be displayed on the screen.
-3. Hover your mouse over the squares to change their color.
-4. To reset the grid and create a new sketch pad, click the "New Grid" button at the top of the screen. You will be prompted to enter the number of squares per side for the new grid. The maximum limit is 100.
-5. The existing grid will be removed, and a new grid with the specified number of squares per side will be generated.
-6. Enjoy creating pixel art with Sketch Master!
+3. Click or drag over the squares to change their color.
+4. At the top-right of the screen, there is a menu where you can:
+    4a. Change the Grid size, by using the slider or by entering the amount. Max size limit is 64.
+    4b. Change the  Color you want for the grid when clicked.
+    4c. Change between 3 Modes: Color (Pick a color) , Rainbow (Random color) , Eraser (White color).
+    4d. Clear the Grid.
+5. Enjoy creating pixel art with Sketch Master!
 
-## Extra Credit
+## Extra
 
 This project includes additional features for a more interactive experience:
 
 - Each interaction with a square randomizes its RGB value, resulting in a different color each time.
-- The squares also darken progressively with each interaction, adding 10% more black or color. The objective is to achieve a completely black square after ten interactions.
+- (Coming Soon) The squares also darken progressively with each interaction, adding 10% more black or color. The objective is to achieve a completely black square after ten interactions.
 
-Feel free to customize and enhance the project further based on your creativity and ideas!
 
 ## Resources
 
-- Odin's Recipes project: [link](https://example.com)
-- HTML button tag: [link](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button)
-- JavaScript prompts: [link](https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt)
+- Odin's Etch-a-Sketch project: [link](https://www.theodinproject.com/lessons/foundations-etch-a-sketch)
+
 
 ## License
 
