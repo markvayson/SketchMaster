@@ -6,7 +6,7 @@ let currentSize = DEFAULT_SIZE;
 let currentColor = DEFAULT_COLOR;
 let currentMode = DEFAULT_MODE;
 
-let mouseDown = false;
+let pointerDown = false;
 
 window.addEventListener("DOMContentLoaded", () => {
   const gridContainer = document.getElementById("gridContainer");
@@ -38,8 +38,8 @@ window.addEventListener("DOMContentLoaded", () => {
   Color.textContent = "Color";
   Clear.textContent = "Clear";
 
-  document.body.onmousedown = () => (mouseDown = true);
-  document.body.onmouseup = () => (mouseDown = false);
+  document.body.onpointerdown = () => (pointerDown = true);
+  document.body.onpointerup = () => (pointerDown = false);
 });
 function menuMode() {
   if (menuContainer.classList.contains("opacity-0")) {
@@ -125,8 +125,8 @@ function setGrid(size) {
 
   for (let i = 0; i < size * size; i++) {
     const gridElement = document.createElement("div");
-    gridElement.addEventListener("mouseover", changeColor);
-    gridElement.addEventListener("mousedown", changeColor);
+    gridElement.addEventListener("pointermove", changeColor);
+    gridElement.addEventListener("pointerdown", changeColor);
     gridContainer.appendChild(gridElement);
   }
 }
@@ -135,7 +135,7 @@ function changeColor(e) {
   if (!menuContainer.classList.contains("opacity-0")) {
     menuMode();
   }
-  if (e.type === "mouseover" && !mouseDown) return;
+  if (e.type === "pointermove" && !pointerDown) return;
   if (currentMode === "Rainbow") {
     const r = Math.floor(Math.random() * 256);
     const g = Math.floor(Math.random() * 256);
