@@ -8,10 +8,10 @@ This project is a sketch pad that allows you to create pixel art by hovering ove
 2. A 16x16 grid of square divs will be displayed on the screen.
 3. Click or drag over the squares to change their color.
 4. At the top-right of the screen, there is a menu where you can:
-    4a. Change the Grid size, by using the slider or by entering the amount. Max size limit is 64.
-    4b. Change the  Color you want for the grid when clicked.
-    4c. Change between 3 Modes: Color (Pick a color) , Rainbow (Random color) , Eraser (White color).
-    4d. Clear the Grid.
+    + Change the Grid size, by using the slider or by entering the amount. Max size limit is 64.
+    + Change the  Color you want for the grid when clicked.
+    + Change between 3 Modes: Color (Pick a color) , Rainbow (Random color) , Eraser (White color).
+    + Clear the Grid.
 5. Enjoy creating pixel art with Sketch Master!
 
 ## Extra
